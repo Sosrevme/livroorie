@@ -1,0 +1,166 @@
+/* O asterisco é um seletor universal. Será aplicado em todos os elementos da página. Quando abrimos alguns sites na internet, ele já vem com uma formacatação padrão. O Asterisco serve para limpar a formatação padrão e adicionar uma nova.
+ Costuma ser chamado de Reset. */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* line-height diz respeito a altura da linha. */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* position quer dizer que estou fixando meu elemento NAV na tela. */
+/* top:0 quer dizer que a partir do topo eu quero 0 espaço. O topo está colado  */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(217, 75, 43);
+    padding: 20px 0;
+    /* transition: background-color 0.3s ease; */
+}
+
+/* foi colocado "NAV UL" quer dizer que estamos formatando o UL que está dentro do NAV. Caso não fazemos essa especificação e deixamos apenas UL, quer dizer que todas as listas do site serão formatadas. */
+/* list-style-type é o tipo de marcador que estamos usando. A lista vem automaticamente um marcador. Para retirarmos o marcador utilizamos o "none" */
+/* display:flex. Ajusta a posição dos elementos na caixa em que ele está. Se quero que um elemento fique um do lado do outro, devo usar ele. Terá um display de maneira flexível. Ele deixou de ser uma lista e passou a ser horizontal. */
+/* justify-content está centralizando o conteúdo da lista */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* foi colocado "NAV UL" quer dizer que estamos formatando a LI que está dentro da UL que está dentro do NAV. */
+/* foi colocado uma margem para cada item na lista. O primeiro valor é vertical. O Segundo é horizontal. */
+/* padding é o espaçamento dentro do elemento */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* No padrão o link do site vem sublinhado e azul.  */
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+/* Efeito irá ocorrer quando o mouse estiver sobre o objeto */
+nav ul li a:hover {
+    color: rgb(64, 1, 1);
+}
+
+/* quando chamamos o section:not(#home)(quer dizer que nós queremos todas as seções, exceto a home)*/
+/* padding é o espaçamento interno, quanto temos dois valores sabemos que um é vertical e o outro horizontal*/
+/* display:flex um elemento do lado do outro. Se couber*/
+/* justify-content só é possível usar onde possua display:flex. É o alinhamento horizontal do conteúdo*/
+/* height altura da seção. A unidade de medida VH é view port height, é usado especialmente para telas. 
+Nesse caso, quer dizer que a altura da seção será 100% a altura da tela. Ajudará o site a ficar responsivo. Não perderá a qualidade em formatos diferentes.*/
+
+section:not(#home) {
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* flex-direction:column para deixar o conteúdo um abaixo do outro. */
+/* fonte-size:1.5em usada principalmente para texto, terá como referência o elemento pai.m "EM" unidade de medida elemento pai.
+Como eu sei quem é o elemento Pai?  */
+#home {
+    /*background-color: #4A90E2;*/
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDBYOy2Xv6sAhMhwEl_-0WSDB4dPt6K7gOEjnFsH1RsDtC0T3FMYFBkc0OCtrdpaHGrAOPkW8NZ4ToA046FH9nPVg1Rerb1_S1MHCItZwyp4xtLogyRCvPl514hTyIjEO38lB_zc87mHjA/s1600/ORIE_34-35.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+/* qual a diferença entre id e class? ID é exclusivo, unico. Class é o coletivo.  */
+/* o ponto "." significa que eu estou configurando uma classe. */
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     justify-content: center; 
+}
+
+/* imagem que está dentro da classe content. border-radius são os locais arredondados */
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 50px;
+    border-radius: 8px;
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: rgb(217, 75, 43);
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #0e0e0e;
+}
+
+#sobreolivro {
+    background-color: #ffffff;
+}
+
+#sobreaautora {
+
+    background-color: rgb(255, 250, 236);
+
+}
+
+#outrasobras {
+
+    background-color: #ffffff;
+}
+
+.cta-button {
+    margin-top: 30px;
+    background-color: rgb(217, 75, 43);
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgb(64, 1, 1);
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.cta-button:hover {
+    background-color: rgb(140, 28, 3);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(140, 28, 3);
+    color: #ffffff;
+}

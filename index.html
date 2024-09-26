@@ -1,0 +1,129 @@
+<!-- Atalho para acrescentar comentário: CMD + / -->
+<!-- ORGANIZAR O CODIGO VISUALMENTE: ALT+SHIFT+F -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8"> <!-- UTF-8 Família de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIE</title>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+
+    <!-- Elemento "Nav" serve para dizer que o conteúdo dentro dele se refere a barra de navegação. Avisa ao navegador que as próximas linhas são links de navegação. -->
+    <!-- Elemento "UL" é uma lista. Sempre que vou criar uma lista, terei um elemento que irá avisar que estou fazendo uma lista. UL é uma lista não ordenada. OL é uma lista ordenada. -->
+    <!-- "LI" é para avisar que o conteúdo é um item da lista. É para cada item da lista. Toda lista irá possuir LI. -->
+    <!-- Elemento "A" é um hiperlink -->
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- type "a", "i", "1". Reversed é um atributo que não possui valor. Funciona apenas em lista ordenada-->
+    <!-- <ol type="a" start="3" reversed>
+    <li> <a href="#home">Início</a></li>
+    <li> <a href="#services">Serviços</a></li>
+    <li> <a href="#about">Sobre</a></li>
+    <li> <a href="#contact">Contato</a></li>
+    </ol> -->
+
+    <!-- type atributos "disc","circle","square". -->
+    <nav id="navbar">
+        <ul type="square">
+            <li> <a href="#home">Início</a></li>
+            <li> <a href="#sobreolivro">Sobre o Livro</a></li>
+            <li> <a href="#sobreaautora">Sobre a Autora</a></li>
+            <li> <a href="#outrasobras">Outras Obras</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Seção Home -->
+    <!-- O elemento Section (seção) é igual Nav. Só para avisar que todo o conteúdo está dentro da mesma seção. É uma forma de avisar ao navegador que todo o conteúdo pertence a mesma seção. -->
+    <!-- o elemento "ID" é uma identificação. -->
+    <!-- O elemento "button" é para criar um botão. O "class" também é para identificar alguma coisa. O elemento "ID" é exclusivo. O elemento Class é para indicar mais elementos. -->
+    <section id="home">
+        <h1>Delicadeza e poesia</h1>
+        <p>Orie: Uma jornada encantadora pelo rio da infância</p>
+        <button class="cta-button">Descubra a história de Orie</button>
+    </section>
+
+    <!-- Seção Sobre o Livro-->
+    <!-- <img src="https://via.placeholder.com/400x300" alt="Serviços de UX para Design" height="300px"> -->
+
+    <section id="sobreolivro">
+        <div class="content">
+            <img src="https://m.media-amazon.com/images/I/A1eH1zf5JOL._AC_UF1000,1000_QL80_.jpg"
+                alt="Serviços de UX para Design">
+            <div class="text">
+                <h2>Orie: Uma jornada Encantadora</h2>
+                <p>Orie é um livro infantil da renomada escritora brasileira Lúcia Hiratsuka, que nos transporta para um
+                    universo poético e sensível, inspirado nas vivências da avó da autora. A história acompanha a
+                    pequena Orie em suas aventuras a bordo de um barco, navegando pelos rios e descobrindo a beleza da
+                    natureza e as transformações da vida.</p>
+                <p>Com uma linguagem simples e delicada, a autora nos presenteia com uma narrativa que celebra a
+                    infância, a família e a conexão com o mundo natural. As ilustrações, feitas em papel kraft e com
+                    técnicas como carvão e giz pastel seco, complementam o texto de forma harmoniosa, transmitindo a
+                    tranquilidade e a beleza das paisagens.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre a Autora-->
+    <section id="sobreaautora">
+        <div class="content">
+            <img src="https://cdl-static.s3-sa-east-1.amazonaws.com/blog/artigo/6440/images/as-infancias-eternas-de-lucia-hiratsuka-uma-conversa-com-a-autora_1.jpg"
+                alt="Sobre a Autora">
+            <div class="text">
+                <h2>Lúcia Hiratsuka</h2>
+                <p>Lúcia Hiratsuka é uma escritora brasileira de origem japonesa, nascida em 1947 na cidade de São
+                    Paulo. É conhecida principalmente por seus livros infantis e juvenis, que abordam temas como cultura
+                    japonesa, amizade, família e a importância da natureza.</p>
+                <p>Hiratsuka estudou Letras na Universidade de São Paulo e começou a escrever ainda jovem. Seu primeiro
+                    livro infantil, "O Gato de Olhos Azuis", foi publicado em 1982 e recebeu diversos prêmios
+                    literários. Desde então, a autora já publicou mais de 30 livros, traduzidos para vários idiomas.</p>
+                <p>As obras de Lúcia Hiratsuka são caracterizadas por sua linguagem simples e poética, além de suas
+                    ilustrações delicadas e coloridas. A autora costuma se inspirar em suas próprias experiências de
+                    infância e em sua conexão com a natureza para criar histórias que encantam e ensinam os jovens
+                    leitores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Outras Obras -->
+    <!-- O elemento "DIV" é um espaço para colocar algum conteúdo. É como se fosse uma caixa. Vem de divisão. Criando uma divisão para colocar o conteúdo. -->
+    <section id="outrasobras">
+        <div class="content">
+            <img src="https://m.media-amazon.com/images/I/71ebQFN3mjS._AC_UF1000,1000_QL80_.jpg" alt="outrasobras">
+            <div class="text">
+                <h2>Chão de Peixes</h2>
+                <h3>Sinopse</h3>
+                <p>Um livro de poemas que celebra a beleza da natureza e a força das palavras.</p>
+                <h3>Destaques</h3>
+                <p>Poesia, natureza, sensibilidade</p>
+                <h3>Onde Comprar</h3>
+                <p>Amazon, Editora Antroposófica</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="https://m.media-amazon.com/images/I/71ebQFN3mjS._AC_UF1000,1000_QL80_.jpg" alt="outrasobras">
+            <div class="text">
+                <h2>Contos e Lendas do Japão</h2>
+                <h3>Sinopse</h3>
+                <p>Uma coleção de contos e lendas japonesas reinterpretados pela autora.</p>
+                <h3>Destaques</h3>
+                <p>Cultura japonesa, mitos, lendas</p>
+                <h3>Onde Comprar</h3>
+                <p>Amazon, Editora Antroposófica</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caixa para colocar o rodapé. Usando HTML semântico. -->
+    <footer>
+        <!-- <p>Todos os direitos reservados | Valéria Oliveira &copy; </p> -->
+        <p>Todos os direitos reservados | Valéria Oliveira &reg; </p>
+    </footer>
+</body>
+
+</html>
